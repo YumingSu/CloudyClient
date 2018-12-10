@@ -1,0 +1,7 @@
+[
+    { "brand": "Coach", "price": 310, "type": "bag", "reports": 22, "message": "Bad quality!" },
+    { "brand": "Chanel", "price": 250, "type": "wallet", "reports": 36, "message": "Bad quality!"},
+    { "brand": "Dior", "price": 280, "type": "shirt", "reports": 36,"message": "Bad quality!" },
+    { "brand": "Gucci", "price": 560, "type": "coat", "reports": 36, "message": "Bad quality!" }
+
+]

@@ -8,6 +8,8 @@ Student No.:  20082247
 
 To report the factory that produce fake and their products on this vue app, and mark their place on google map.It also provide users' log in and register.It also can log via google account and facebook account.
 
+Github http: https://github.com/YumingSu/CloudyClient
+
 ## E2E Testing.
 
      $ npx cypress run --spec cypress/integration/report.spec.js

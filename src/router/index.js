@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
 import Imitations from '@/components/Imitations'
+import Factories from '@/components/Factories'
 import Report from '@/components/Report'
 import AboutUs from '@/components/AboutUs'
 import ContactUs from '@/components/ContactUs'
@@ -22,6 +23,11 @@ export default new Router({
       path: '/imitations',
       name: 'Imitations',
       component: Imitations
+    },
+    {
+      path: '/factories',
+      name: 'Factories',
+      component: Factories
     },
     {
       path: '/report',

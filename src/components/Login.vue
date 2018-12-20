@@ -17,6 +17,8 @@
       <button v-on:click="register">Register</button>
       <span v-on:click="ToLogin">Have account?Log in now</span>
     </div>
+
+    <a href="https://github.com/login/oauth/authorize?client_id=137fb26bb144a4ebb83f&redirect_uri=http://localhost:8080" class="button">Github Login</a>
   </div>
 </template>
 
@@ -51,7 +53,7 @@ export default{
     }
   },
   methods: {
-    login () {
+    login (username, password) {
       if (this.username === '' || this.password === '') {
         alert('Please enter user name or password')
       } else {
@@ -82,7 +84,7 @@ export default{
         alert('Please enter user name or password')
       } else {
         let data = {'username': this.newUsername, 'password': this.newPassword}
-        this.$http.post('http://localhost/vueapi/index.php/Home/user/register', data).then((res) => {
+        this.$http.post('http://localhost3000', data).then((res) => {
           console.log(res)
           if (res.data === 'ok') {
             this.tishi = 'Regiser successfully!'
@@ -121,5 +123,13 @@ export default{
   .hero .lead {
     font-weight: 200;
     font-size: 2.5rem;
+  }
+  a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
   }
 </style>

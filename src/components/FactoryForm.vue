@@ -5,7 +5,7 @@
         <label class="form-label">Select Factory Type</label>
         <select id="brand" name="brand" class="form-control"
                 type="text" v-model="brand">
-          <option value="null" selected disabled hidden>Choose Brand Type</option>
+          <option value="null" selected disabled hidden>Choose Factory Place</option>
           <option value="Gucci">Gucci</option>
           <option value="Chanel">Chanel</option>
           <option value="Dior">Dior</option>
